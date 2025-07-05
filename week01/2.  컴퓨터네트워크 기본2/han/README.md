@@ -32,7 +32,7 @@ application에는 process가 존재한다.
 
  중간의 네트워크가 어떻게 구성되는지 관심없음
  process간의 통신<br>
- (라우터에는 3-5계층만 존재함)
+ (라우터에는 1-3계층만 존재함)
 
 ### Client-Server 구조
 
