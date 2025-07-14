@@ -20,6 +20,7 @@
 ![alt text](image_01.png)
 ![alt text](image_02.png)
 
+
 ### 웹서버 socket() 생성
 
 → bind(): 특정 포트에 socket을 bind
@@ -40,6 +41,9 @@
 ### How demultiplexing Works
 
 ![alt text](image_04.png)
+
+
+
 Segment : Data + Header(source port # + dest port # + other header fields)
 Data 부분은 Header에 비해 엄청나게 큼
 
@@ -55,6 +59,9 @@ Data 부분은 Header에 비해 엄청나게 큼
 ### UDP Segment header
 
 ![alt text](image_05.png)
+
+
+
 header 부분 field 4개 => 그만큼 동작이 단순하다
 → source port, dest port, length, checksum
 source port, dest port=> 각각 크기가 16bit (0 ~2^16-1), multi/demultiplexing을 할때 사용
