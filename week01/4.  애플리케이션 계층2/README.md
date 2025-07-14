@@ -24,6 +24,7 @@
   ![alt text](image_01.png)
   ![alt text](image_02.png)
 
+
 ### 정리
 
 **unreliable channel**이 있을 때 → **packet error, loss** 발생
@@ -33,6 +34,7 @@
 rdt v3.0의 performance
 → 한번에 하나밖에 못 보냄
 ![alt text](image_03.png)
+
 
 Pipelined protocols
 : 실제로 TCP가 동작하는 방식, packet을 여러개 묶어서 보냄
