@@ -16,7 +16,7 @@ rdt 3.0의 utilization → 0.00027 → 굉장히 비효율적 (packet을 보내�
 
 pipelined protocol의 일반적인 형식: **go-Back-N, selective repeat**
 
-**Go-Back-N**
+## Go-Back-N
 
 go-Back-N이든, selective repeat이든, 한꺼번에 많은 packet을 쏟아 부음
 -> 얼마나 많이 보낼것인가에 기준이 있어야 함 => **"window"**
@@ -39,7 +39,9 @@ window size만큼은 한꺼번에 feedback 받지 않고 보낼수 있음
 ![alt text](image2.png)
 => 유실된 거 때문에 재전송 해야하는 것들이 많아짐;; 
 
-**Selective Repeat**
+
+---
+## Selective Repeat
 - 문제가 있을 때, **selective**하게 유실된 packet만 재전송을 해줌
 => ACK가 누적이 아니라 **individually**하게 바뀜 (ex) ACK7 => ACK 7번만을 선택
 
@@ -47,7 +49,9 @@ window size만큼은 한꺼번에 feedback 받지 않고 보낼수 있음
 - receiver의 역할: 순서에 맞지 않게 들어온 packet이라도 저장을 해줘야 함
 (ex) 2번을 기다리는데 3번이 들어옴 -> 3번을 buffer에 저장, 대신 ACK를 보내줘야 함
 
-### 딜레마 
+
+---
+## 딜레마 
 window size: 3, seq # : 0, 1, 2, 3 (4개)
 
 패킷 번호(Sequence #)가 재사용되기 때문에, 수신자가 오래된 패킷과 새로운 패킷을 구분하지 못할 수 있는 딜레마가 발생
