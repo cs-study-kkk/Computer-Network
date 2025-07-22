@@ -88,3 +88,4 @@ goal: K TCP 세션이 대역폭 R의 동일한 병목 링크를 공유하는 경
 ## Chapter 3 요약
 - 전송 계층 서비스의 원리: multiplexing/demultiplexing, reliable data transfer, flow control, congestion control
 - 인터넷에서의 인스턴스화 및 구현: UDP, TCP
+- 

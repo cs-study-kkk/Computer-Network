@@ -1,22 +1,3 @@
-# Transport Layer - Chapter 3 정리
-
----
-
-## 3장 개요(Outline)
-
-3.1 전송 계층 서비스(Transport-layer services)
-3.2 다중화와 역다중화(Multiplexing and demultiplexing)
-3.3 비연결형 전송: UDP(Connectionless transport: UDP)
-3.4 신뢰성 있는 데이터 전송 원칙(Principles of reliable data transfer)
-3.5 연결형 전송: TCP(Connection-oriented transport: TCP)
-  - 세그먼트 구조(segment structure)
-  - 신뢰성 있는 데이터 전송(reliable data transfer)
-  - 흐름 제어(flow control)
-  - 연결 관리(connection management)
-3.6 혼잡 제어 원칙(Principles of congestion control)
-3.7 TCP 혼잡 제어(TCP congestion control)
-
----
 
 ## TCP: 개요(Overview)
 
