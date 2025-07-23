@@ -41,7 +41,7 @@ RTT값이 고정되어 있으면 좋지만, 실제로는 그렇지 않음
 => 대표할 수 있을만한 대표 RTT 값 : EstimatedRTT (보정 값)
 
 
-EstimatedRTT = (1- a) *EstimatedRTT + a*SampleRTT
+EstimatedRTT = (1- a) * EstimatedRTT + a * SampleRTT
 (typical value: a = 0.125, SampleRTT: 실제 측정 값)
 
 
