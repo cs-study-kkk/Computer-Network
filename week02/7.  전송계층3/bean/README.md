@@ -1,20 +1,3 @@
-# Transport Layer - Chapter 3: Flow Control & Connection Management
-
----
-
-## 3장 개요(Outline)
-
-3.1 전송 계층 서비스(Transport-layer services)
-3.2 다중화와 역다중화(Multiplexing and demultiplexing)
-3.3 비연결형 전송: UDP(Connectionless transport: UDP)
-3.4 신뢰성 있는 데이터 전송 원칙(Principles of reliable data transfer)
-3.5 연결형 전송: TCP(Connection-oriented transport: TCP)
-  - 세그먼트 구조(segment structure)
-  - 신뢰성 있는 데이터 전송(reliable data transfer)
-  - 흐름 제어(flow control)
-  - 연결 관리(connection management)
-3.6 혼잡 제어 원칙(Principles of congestion control)
-3.7 TCP 혼잡 제어(TCP congestion control)
 
 ---
 
@@ -122,10 +105,13 @@
 - 네트워크로부터 명시적인 피드백 없음
 - 송신자가 패킷 손실, 지연 등 종단 시스템에서 관찰되는 현상으로 혼잡을 추정
 - TCP가 사용하는 방식
+- 비유하자면 고속도로에서 달리는 자동차, 도로 전체 상황은 몰라도 내 차 속도가 느려지고 빨라지는 것은 알 수 있다. 이것을 토대로 판단
 
 ### 2. Network-assisted(네트워크 지원) 혼잡 제어
 - 라우터가 종단 시스템에 피드백 제공
   - 예: 혼잡 상태를 나타내는 비트(SNA, DECbit, TCP/IP ECN, ATM 등)
   - 송신 속도를 명시적으로 지정
+ 
+- 고속도로로 다시 설명하면 네비나 전광판 같이 도로 상황을 알려주고 그것을 통해 대응하는 것
 
 --- 
