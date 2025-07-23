@@ -13,6 +13,8 @@
 ### TCP segment 구조
 
 source port #: 보내는 사람의 socket
+
+
 checksum: error detection
 
 
