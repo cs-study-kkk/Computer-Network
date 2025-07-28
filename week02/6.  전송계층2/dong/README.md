@@ -1,6 +1,6 @@
 # 6. 전송계층2
 
-### TCP
+## TCP
 - point-to-point: 한쌍의 프로세스(더 정확하게는 한쌍의 소켓)의 통신을 책임진다.
 - reliable, in-order byte stream
 - pipelined
@@ -10,7 +10,8 @@
 - flow controlled: receiver의 소화 능력에 맞게 알맞은 양을 조절해서 보내줌
 
 
-### TCP segment 구조
+---
+## TCP segment 구조
 
 source port #: 보내는 사람의 socket
 
@@ -18,7 +19,8 @@ source port #: 보내는 사람의 socket
 checksum: error detection
 
 
-### TCP의 동작
+---
+## TCP의 동작
 
 TCP에서 사용하는 seq num: 제일 앞에 있는 byte의 순서 번호
 ex) 덩어리가 10 ~ 17까지 있다? -> seq # =  10
@@ -26,7 +28,8 @@ TCP에서 사용하는 ACK : cumulative ACK
 go-back-N에서는  ACK10은 10번까지 잘 받았다지만, TCP에서는 9번까지 잘 받았다는 뜻
 
 
-### Timeout
+---
+## Timeout
 
 timeout value를 얼마로 설정할 것인가?
 작게하면, recovery 빠르지만 네트워크에 쓸데없는 overhead를 줌
@@ -53,7 +56,8 @@ DevRTT = (1-ẞ) *DevRTT +B * | SampleRTT-EstimatedRTT|
 (typically, ẞ = 0.25)
 
 
-### TCP reliable data transfer
+---
+## TCP reliable data transfer
 - 파이프라인 방식
 - Cumulative acks
 - TCP는 timer 1개 사용(go-back-N과 비슷하지만, TCP에서는 해당하는 segment만 재전송)
